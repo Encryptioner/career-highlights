@@ -1,0 +1,233 @@
+{
+  "projects_timeline": [
+    {"name": "BD Traffic Police", "start": 2019, "end": 2020, "category": "Government", "complexity": 4, "status": "Extended 2023"},
+    {"name": "Bikribatta", "start": 2019, "end": 2023, "category": "Enterprise", "complexity": 5, "status": "Completed"},
+    {"name": "Daency", "start": 2020, "end": 2022, "category": "Education", "complexity": 4, "status": "Completed"},
+    {"name": "Boilerplate", "start": 2020, "end": 2025, "category": "Infrastructure", "complexity": 3, "status": "Ongoing"},
+    {"name": "Daily Stocks", "start": 2021, "end": 2023, "category": "FinTech", "complexity": 4, "status": "Completed"},
+    {"name": "Demo Projects", "start": 2022, "end": 2023, "category": "Research", "complexity": 2, "status": "Completed"},
+    {"name": "Genius", "start": 2022, "end": 2024, "category": "AI", "complexity": 4, "status": "Completed"},
+    {"name": "Second Line & Second Text", "start": 2022, "end": 2025, "category": "Communication", "complexity": 3, "status": "Ongoing"},
+    {"name": "AI Mate & AI Seek", "start": 2023, "end": 2025, "category": "AI", "complexity": 5, "status": "Ongoing"},
+    {"name": "PixelsCraft", "start": 2023, "end": 2025, "category": "AI", "complexity": 4, "status": "Ongoing"},
+    {"name": "FT Education", "start": 2023, "end": 2025, "category": "Education", "complexity": 4, "status": "Ongoing"},
+    {"name": "AI Chat Bot", "start": 2024, "end": 2024, "category": "AI", "complexity": 3, "status": "Completed"},
+    {"name": "BD Gas", "start": 2024, "end": 2025, "category": "Government", "complexity": 4, "status": "Ongoing"},
+    {"name": "Fax App", "start": 2024, "end": 2025, "category": "Utility", "complexity": 2, "status": "Ongoing"},
+    {"name": "Shopify CRM Chat", "start": 2025, "end": 2025, "category": "E-commerce", "complexity": 4, "status": "Ongoing"},
+    {"name": "Biddaan", "start": 2025, "end": 2025, "category": "Education", "complexity": 5, "status": "Ongoing"}
+  ],
+
+  "project_categories": {
+    "AI": {
+      "count": 6,
+      "projects": ["Shopify CRM Chat", "AI Mate & AI Seek", "PixelsCraft", "Genius", "AI Chat Bot", "Demo - Voice Over ChatGPT"],
+      "complexity_avg": 4.2,
+      "users_peak": 200000,
+      "key_tech": ["OpenAI API", "Real-time Audio", "WebAssembly", "Socket.IO"]
+    },
+    "Enterprise": {
+      "count": 4,
+      "projects": ["BD Gas", "BD Traffic Police", "Bikribatta", "Second Line & Second Text"],
+      "complexity_avg": 4.0,
+      "users_peak": 50000,
+      "key_tech": ["PostgreSQL", "MongoDB", "Docker", "CI/CD"]
+    },
+    "Education": {
+      "count": 4,
+      "projects": ["Biddaan", "FT Education", "Daency", "CLS Learning"],
+      "complexity_avg": 4.3,
+      "users_peak": 80000,
+      "key_tech": ["Vue.js", "React", "MongoDB", "Real-time Systems"]
+    },
+    "FinTech": {
+      "count": 1,
+      "projects": ["Daily Stocks"],
+      "complexity_avg": 4.0,
+      "users_peak": 100000,
+      "key_tech": ["Vue.js", "Express", "PostgreSQL", "Redis"]
+    },
+    "E-commerce": {
+      "count": 2,
+      "projects": ["Shopify CRM Chat", "Bikribatta E-Commerce"],
+      "complexity_avg": 4.0,
+      "users_peak": 25000,
+      "key_tech": ["React", "Node.js", "Payment Gateways", "MongoDB"]
+    },
+    "Communication": {
+      "count": 2,
+      "projects": ["Second Line & Second Text", "AI Chat Bot"],
+      "complexity_avg": 3.0,
+      "users_peak": 15000,
+      "key_tech": ["Express", "MongoDB", "WebSockets", "Redis"]
+    },
+    "Infrastructure": {
+      "count": 3,
+      "projects": ["Boilerplate", "Various", "Others"],
+      "complexity_avg": 2.5,
+      "users_peak": 0,
+      "key_tech": ["Docker", "CI/CD", "Templates", "Documentation"]
+    }
+  },
+
+  "technology_stack_usage": {
+    "Frontend": {
+      "React": {"projects": 12, "years": [2019, 2020, 2021, 2022, 2023, 2024, 2025]},
+      "Vue.js": {"projects": 8, "years": [2020, 2021, 2022, 2023, 2024, 2025]},
+      "TypeScript": {"projects": 15, "years": [2021, 2022, 2023, 2024, 2025]},
+      "Tailwind CSS": {"projects": 10, "years": [2022, 2023, 2024, 2025]},
+      "Next.js": {"projects": 3, "years": [2024, 2025]}
+    },
+    "Backend": {
+      "Node.js/Express": {"projects": 14, "years": [2019, 2020, 2021, 2022, 2023, 2024, 2025]},
+      "NestJS": {"projects": 6, "years": [2022, 2023, 2024, 2025]},
+      "Python/Django": {"projects": 3, "years": [2020, 2021, 2022]},
+      "PHP/Laravel": {"projects": 2, "years": [2019, 2020]}
+    },
+    "Databases": {
+      "MongoDB": {"projects": 12, "years": [2020, 2021, 2022, 2023, 2024, 2025]},
+      "PostgreSQL": {"projects": 6, "years": [2019, 2020, 2021, 2022]},
+      "Redis": {"projects": 8, "years": [2021, 2022, 2023, 2024, 2025]}
+    },
+    "Mobile": {
+      "Flutter": {"projects": 6, "years": [2022, 2023, 2024, 2025]},
+      "React Native": {"projects": 4, "years": [2019, 2020, 2021, 2022]}
+    },
+    "AI_ML": {
+      "OpenAI API": {"projects": 8, "years": [2022, 2023, 2024, 2025]},
+      "Real-time Audio": {"projects": 3, "years": [2024, 2025]},
+      "WebAssembly": {"projects": 2, "years": [2025]},
+      "Computer Vision": {"projects": 2, "years": [2019, 2024]}
+    }
+  },
+
+  "project_complexity_distribution": {
+    "Level_5_Revolutionary": {
+      "count": 3,
+      "projects": ["AI Mate & AI Seek", "Bikribatta ERP", "Biddaan"],
+      "characteristics": ["Multi-AI architecture", "Enterprise ERP", "Multi-company SaaS"],
+      "years": [2019, 2023, 2025]
+    },
+    "Level_4_Advanced": {
+      "count": 7,
+      "projects": ["Shopify CRM Chat", "PixelsCraft", "Daily Stocks", "FT Education", "BD Gas", "BD Traffic Police", "Daency"],
+      "characteristics": ["AI integration", "Real-time systems", "Government solutions"],
+      "years": [2019, 2020, 2021, 2023, 2024, 2025]
+    },
+    "Level_3_Professional": {
+      "count": 4,
+      "projects": ["AI Chat Bot", "Genius", "Boilerplate", "Second Line & Second Text"],
+      "characteristics": ["Standard web applications", "API integrations"],
+      "years": [2020, 2022, 2024]
+    },
+    "Level_2_Intermediate": {
+      "count": 3,
+      "projects": ["Fax App", "Demo Projects", "Various"],
+      "characteristics": ["Utility applications", "Proof of concepts"],
+      "years": [2022, 2024]
+    },
+    "Level_1_Foundation": {
+      "count": 1,
+      "projects": ["Others"],
+      "characteristics": ["Analysis and planning"],
+      "years": [2022]
+    }
+  },
+
+  "user_scale_by_project": {
+    "AI Mate & AI Seek": {"peak_users": 200000, "category": "Consumer AI"},
+    "Daily Stocks": {"peak_users": 100000, "category": "FinTech"},
+    "FT Education": {"monthly_active": 80000, "category": "Education"},
+    "Daency": {"peak_users": 150000, "category": "Education"},
+    "PixelsCraft": {"active_users": 50000, "category": "Creative AI"},
+    "BD Gas": {"users": 500, "category": "Government B2B"},
+    "Bikribatta": {"companies": 100, "category": "Enterprise B2B"}
+  },
+
+  "development_methodology_evolution": {
+    "Architecture_Patterns": [
+      {"period": "2019-2020", "pattern": "Monolithic", "projects": ["BD Traffic Police", "Bikribatta"]},
+      {"period": "2021-2022", "pattern": "Microservices", "projects": ["Daily Stocks", "Genius"]},
+      {"period": "2023-2024", "pattern": "Monorepo", "projects": ["AI Mate", "PixelsCraft"]},
+      {"period": "2024-2025", "pattern": "Multi-tenant SaaS", "projects": ["FT Education", "Biddaan"]},
+      {"period": "2025", "pattern": "Real-time AI", "projects": ["Shopify CRM Chat", "AI Mate Audio"]}
+    ],
+    "DevOps_Evolution": [
+      {"period": "2019", "level": "Manual Deployment", "projects": 2},
+      {"period": "2020", "level": "Containerization", "projects": 4},
+      {"period": "2021", "level": "CI/CD Pipelines", "projects": 6},
+      {"period": "2022", "level": "Cloud Infrastructure", "projects": 8},
+      {"period": "2023", "level": "Multi-environment", "projects": 10},
+      {"period": "2024-2025", "level": "Zero-downtime", "projects": 12}
+    ]
+  },
+
+  "cross_project_reusability": {
+    "Authentication_Systems": {
+      "projects_count": 8,
+      "reused_in": ["Daily Stocks", "AI Mate", "PixelsCraft", "FT Education", "Genius", "Bikribatta", "Daency", "BD Gas"]
+    },
+    "Real_time_Communication": {
+      "projects_count": 6,
+      "reused_in": ["AI Mate", "AI Chat Bot", "Daency", "Genius", "Daily Stocks", "Shopify CRM Chat"]
+    },
+    "File_Upload_Processing": {
+      "projects_count": 10,
+      "reused_in": ["PixelsCraft", "Genius", "FT Education", "BD Gas", "AI Chat Bot", "Bikribatta", "Daency", "Second Line", "Fax App", "AI Mate"]
+    },
+    "Push_Notifications": {
+      "projects_count": 7,
+      "reused_in": ["AI Mate", "PixelsCraft", "Daily Stocks", "FT Education", "Genius", "Second Line", "Fax App"]
+    },
+    "Admin_Dashboards": {
+      "projects_count": 12,
+      "reused_in": ["All major projects with admin components"]
+    }
+  },
+
+  "business_domain_distribution": {
+    "Educational_Technology": {"projects": 4, "user_impact": "High", "complexity": 4.3},
+    "Artificial_Intelligence": {"projects": 6, "user_impact": "Revolutionary", "complexity": 4.2},
+    "Government_Solutions": {"projects": 3, "user_impact": "Institutional", "complexity": 4.0},
+    "Financial_Services": {"projects": 3, "user_impact": "High", "complexity": 4.0},
+    "E_commerce": {"projects": 4, "user_impact": "Medium", "complexity": 3.5},
+    "Communication_Systems": {"projects": 4, "user_impact": "Medium", "complexity": 3.2}
+  },
+
+  "visualization_config": {
+    "color_schemes": {
+      "primary_colors": ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FFEAA7", "#DDA0DD", "#98D8E8", "#F7DC6F"],
+      "category_colors": {
+        "AI": "#FF6B35",
+        "Enterprise": "#4ECDC4",
+        "Education": "#45B7D1",
+        "FinTech": "#96CEB4",
+        "E-commerce": "#FFEAA7",
+        "Communication": "#DDA0DD",
+        "Infrastructure": "#98D8E8",
+        "Government": "#F7DC6F"
+      },
+      "complexity_gradient": ["#E3F2FD", "#BBDEFB", "#90CAF9", "#64B5F6", "#42A5F5", "#2196F3"],
+      "status_colors": {
+        "Completed": "#4CAF50",
+        "Ongoing": "#FF9800",
+        "Extended": "#9C27B0"
+      }
+    },
+    "chart_styling": {
+      "background_gradient": "linear",
+      "font_family": "DejaVu Sans",
+      "title_size": 16,
+      "label_size": 12,
+      "legend_size": 10,
+      "dpi": 300,
+      "figure_size": [20, 16]
+    },
+    "brand_elements": {
+      "company_name": "Nerddevs Professional Projects",
+      "tagline": "Revolutionary AI & Enterprise Solutions",
+      "primary_brand_color": "#FF6B6B",
+      "secondary_brand_color": "#4ECDC4"
+    }
+  }
+}

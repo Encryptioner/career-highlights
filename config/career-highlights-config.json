@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "title": "Career Highlights - Ankur Mursalin",
+    "description": "Professional data visualization across career domains and timelines",
+    "author": "Ankur Mursalin",
+    "website": "https://encryptioner.github.io",
+    "generated_date": "2025-01-26",
+    "total_visualizations": 18,
+    "total_domains": 4
+  },
+
+  "visualization_config": {
+    "primary_colors": ["#4ECDC4", "#45B7D1", "#96CEB4", "#FF9F43", "#FCEA2B", "#FF6B6B", "#A29BFE"],
+    "domain_colors": {
+      "personal": "#4ECDC4",
+      "professional": "#45B7D1",
+      "personal-projects": "#96CEB4",
+      "professional-projects": "#FF9F43"
+    },
+    "image_settings": {
+      "dpi": 300,
+      "format": "PNG",
+      "quality": "high"
+    },
+    "responsive": {
+      "mobile_breakpoint": "768px",
+      "tablet_breakpoint": "1024px",
+      "desktop_breakpoint": "1400px"
+    }
+  },
+
+  "categories": {
+    "timeline": {
+      "name": "Timeline & Growth",
+      "icon": "📈",
+      "description": "Career progression and growth stories",
+      "color": "#45B7D1"
+    },
+    "technology": {
+      "name": "Technology Mastery",
+      "icon": "⚡",
+      "description": "Technical skills and stack evolution",
+      "color": "#4ECDC4"
+    },
+    "business": {
+      "name": "Business Impact",
+      "icon": "🎯",
+      "description": "Quantified results and user metrics",
+      "color": "#FF9F43"
+    },
+    "projects": {
+      "name": "Project Portfolio",
+      "icon": "🚀",
+      "description": "Innovation and project achievements",
+      "color": "#96CEB4"
+    }
+  },
+
+  "domains": {
+    "personal": {
+      "name": "Personal Career",
+      "color": "#4ECDC4",
+      "description": "Individual career progression and growth",
+      "timeline": "2016-2025",
+      "key_metrics": ["9+ Years Experience", "16+ Personal Projects", "Technology Evolution"]
+    },
+    "professional": {
+      "name": "Nerddevs Professional",
+      "color": "#45B7D1",
+      "description": "7-year professional journey (2019-2025)",
+      "timeline": "2019-2025",
+      "key_metrics": ["7 Years", "Lead Engineer", "200K+ Users Served"]
+    },
+    "personal-projects": {
+      "name": "Personal Projects",
+      "color": "#96CEB4",
+      "description": "16+ projects spanning 2016-2025",
+      "timeline": "2016-2025",
+      "key_metrics": ["16+ Projects", "Java → WebAssembly Evolution", "Cross-Platform"]
+    },
+    "professional-projects": {
+      "name": "Nerddevs Projects",
+      "color": "#FF9F43",
+      "description": "18+ professional projects and solutions",
+      "timeline": "2019-2025",
+      "key_metrics": ["18+ Projects", "Enterprise Solutions", "AI/ML Integration"]
+    }
+  },
+
+  "visualizations": [
+    {
+      "id": "yearwise_personal_highlights_v1",
+      "title": "Yearwise Personal Highlights",
+      "category": "timeline",
+      "domain": "personal",
+      "file": "yearwise_personal_highlghts_v1.png",
+      "description": "Complete overview of personal career progression with project complexity timeline, technology evolution, and impact metrics",
+      "metrics": ["9+ Years", "93% Open Source", "67% Live Demos", "Technology Evolution"],
+      "featured": true,
+      "tags": ["career", "timeline", "personal", "evolution", "impact"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "pie_chart", "technology_flow", "metrics"]
+    },
+    {
+      "id": "projectwise_personal_highlights_v1",
+      "title": "Personal Project Highlights",
+      "category": "projects",
+      "domain": "personal-projects",
+      "file": "projectwise_personal_highlights_v1.png",
+      "description": "Comprehensive overview of 16 major personal projects over 10 years with timeline, technology evolution, and innovation analysis",
+      "metrics": ["16 Projects", "10 Years", "AI & WebAssembly Innovation", "Technology Evolution"],
+      "featured": true,
+      "tags": ["projects", "personal", "innovation", "timeline", "technology"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "categories", "tech_evolution", "complexity_innovation"]
+    },
+    {
+      "id": "yearwise_highlights_in_nd_v1",
+      "title": "Professional Career Visual Summary - Nerddevs",
+      "category": "timeline",
+      "domain": "professional",
+      "file": "yearwise_highlights_in_nd_v1.png",
+      "description": "Comprehensive professional career progression at Nerddevs with role advancement, user scale growth, technology evolution, and leadership impact",
+      "metrics": ["Lead Engineer", "200k Users", "5+ Interns Trained", "8+ Technical Sessions"],
+      "featured": true,
+      "tags": ["professional", "nerddevs", "career", "leadership", "growth"],
+      "size": "1600x1200",
+      "chart_types": ["progression", "user_scale", "technology_evolution", "skills_heatmap", "leadership_metrics"]
+    },
+    {
+      "id": "comprehensive_career_dashboard",
+      "title": "Comprehensive Career Dashboard",
+      "category": "timeline",
+      "domain": "personal",
+      "file": "comprehensive_career_dashboard.png",
+      "description": "Complete career journey with timeline, technology evolution, and impact metrics",
+      "metrics": ["9+ Years Experience", "16+ Personal Projects", "Technology Evolution"],
+      "featured": true,
+      "tags": ["career", "overview", "dashboard", "timeline"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "bar_chart", "metrics"]
+    },
+    {
+      "id": "enhanced_career_timeline",
+      "title": "Enhanced Career Timeline",
+      "category": "timeline",
+      "domain": "personal",
+      "file": "enhanced_career_timeline.png",
+      "description": "Detailed career progression with projects, complexity, and innovation milestones",
+      "metrics": ["Career Growth", "Project Complexity", "Innovation Milestones"],
+      "featured": false,
+      "tags": ["timeline", "progression", "milestones"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "line_chart", "scatter_plot"]
+    },
+    {
+      "id": "projectwise_highlights_in_nd_v1",
+      "title": "Projectwise Highlights in ND",
+      "category": "projects",
+      "domain": "professional-projects",
+      "file": "projectwise_highlights_in_nd-v1.png",
+      "description": "Comprehensive analysis of 8 major Nerddevs projects with timeline, technology adoption, complexity matrix, and cross-project reusability patterns",
+      "metrics": ["8 Major Projects", "200k Users", "Microservices Evolution", "Cross-Project Reusability"],
+      "featured": true,
+      "tags": ["professional", "projects", "nerddevs", "architecture", "evolution"],
+      "size": "1600x1200",
+      "chart_types": ["gantt_timeline", "category_distribution", "tech_heatmap", "complexity_matrix", "reusability_flow"]
+    },
+    {
+      "id": "technology_mastery_dashboard",
+      "title": "Technology Mastery Dashboard",
+      "category": "technology",
+      "domain": "personal",
+      "file": "technology_mastery_dashboard.png",
+      "description": "Skills radar and technology proficiency across different domains",
+      "metrics": ["15+ Technologies", "Full-Stack Expertise", "AI/ML Integration"],
+      "featured": false,
+      "tags": ["technology", "skills", "radar", "proficiency"],
+      "size": "1600x1200",
+      "chart_types": ["radar_chart", "heatmap", "bar_chart"]
+    },
+    {
+      "id": "nerddevs_comprehensive_dashboard",
+      "title": "Nerddevs Professional Journey",
+      "category": "timeline",
+      "domain": "professional",
+      "file": "nerddevs_comprehensive_dashboard.png",
+      "description": "7-year professional career at Nerddevs with role progression and achievements",
+      "metrics": ["7 Years", "Lead Engineer", "200K+ Users Served"],
+      "featured": true,
+      "tags": ["professional", "nerddevs", "career", "progression"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "metrics", "role_progression"]
+    },
+    {
+      "id": "nerddevs_career_timeline",
+      "title": "Professional Career Timeline",
+      "category": "timeline",
+      "domain": "professional",
+      "file": "nerddevs_career_timeline.png",
+      "description": "Detailed timeline of professional growth, projects, and responsibilities",
+      "metrics": ["Software → Senior → Lead", "Project Complexity Growth", "Team Leadership"],
+      "featured": false,
+      "tags": ["timeline", "growth", "leadership", "professional"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "bar_chart", "line_chart"]
+    },
+    {
+      "id": "nerddevs_technology_mastery",
+      "title": "Professional Technology Mastery",
+      "category": "technology",
+      "domain": "professional",
+      "file": "nerddevs_technology_mastery.png",
+      "description": "Technology stack evolution and expertise in professional environment",
+      "metrics": ["Vue.js 3", "TypeScript", "Node.js", "AI Integration"],
+      "featured": false,
+      "tags": ["technology", "professional", "vue", "typescript"],
+      "size": "1600x1200",
+      "chart_types": ["radar_chart", "timeline", "stack_analysis"]
+    },
+    {
+      "id": "projectwise_comprehensive_dashboard",
+      "title": "Personal Projects Portfolio",
+      "category": "projects",
+      "domain": "personal-projects",
+      "file": "projectwise_comprehensive_dashboard.png",
+      "description": "Complete overview of 16+ personal projects spanning 2016-2025",
+      "metrics": ["16+ Projects", "9 Years", "Java → WebAssembly Evolution"],
+      "featured": true,
+      "tags": ["projects", "portfolio", "personal", "evolution"],
+      "size": "1600x1200",
+      "chart_types": ["overview", "timeline", "technology_distribution"]
+    },
+    {
+      "id": "projectwise_innovation_timeline",
+      "title": "Innovation Timeline",
+      "category": "timeline",
+      "domain": "personal-projects",
+      "file": "projectwise_innovation_timeline.png",
+      "description": "Timeline of personal project innovations and technological breakthroughs",
+      "metrics": ["2016-2025", "Technology Evolution", "Innovation Milestones"],
+      "featured": false,
+      "tags": ["innovation", "timeline", "breakthrough", "evolution"],
+      "size": "1600x1200",
+      "chart_types": ["timeline", "innovation_markers", "tech_evolution"]
+    },
+    {
+      "id": "projectwise_technology_analysis",
+      "title": "Personal Projects Technology Analysis",
+      "category": "technology",
+      "domain": "personal-projects",
+      "file": "projectwise_technology_analysis.png",
+      "description": "Technology distribution and evolution across personal projects",
+      "metrics": ["15+ Technologies", "Web → AI Evolution", "Cross-Platform"],
+      "featured": false,
+      "tags": ["technology", "analysis", "distribution", "personal"],
+      "size": "1600x1200",
+      "chart_types": ["distribution", "evolution", "analysis"]
+    },
+    {
+      "id": "projectwise_nd_comprehensive_dashboard",
+      "title": "Nerddevs Projects Overview",
+      "category": "projects",
+      "domain": "professional-projects",
+      "file": "projectwise_nd_comprehensive_dashboard.png",
+      "description": "18+ professional projects with technology distribution and business impact",
+      "metrics": ["18+ Projects", "Enterprise Solutions", "AI/ML Integration"],
+      "featured": true,
+      "tags": ["professional", "projects", "enterprise", "overview"],
+      "size": "1600x1200",
+      "chart_types": ["overview", "business_metrics", "tech_distribution"]
+    },
+    {
+      "id": "projectwise_nd_technology_evolution",
+      "title": "Professional Technology Evolution",
+      "category": "technology",
+      "domain": "professional-projects",
+      "file": "projectwise_nd_technology_evolution.png",
+      "description": "Technology stack evolution across professional projects",
+      "metrics": ["Vue.js Expertise", "TypeScript", "Full-Stack Solutions"],
+      "featured": false,
+      "tags": ["technology", "evolution", "professional", "stack"],
+      "size": "1600x1200",
+      "chart_types": ["evolution", "stack_timeline", "expertise"]
+    },
+    {
+      "id": "projectwise_nd_business_impact",
+      "title": "Business Impact Analysis",
+      "category": "business",
+      "domain": "professional-projects",
+      "file": "projectwise_nd_business_impact.png",
+      "description": "Quantified business impact and user metrics across professional projects",
+      "metrics": ["200K+ Users", "Multiple Platforms", "Revenue Impact"],
+      "featured": false,
+      "tags": ["business", "impact", "metrics", "users"],
+      "size": "1600x1200",
+      "chart_types": ["metrics", "impact_analysis", "user_growth"]
+    }
+  ],
+
+  "summary_stats": {
+    "total_years_tracked": 9,
+    "personal_projects": 16,
+    "professional_projects": 18,
+    "total_users_impacted": "200K+",
+    "technologies_mastered": 15,
+    "career_domains": 4,
+    "visualizations_generated": "15+",
+    "years_at_nerddevs": 7,
+    "role_progression": ["Software Engineer", "Senior Software Engineer", "Lead Engineer"]
+  },
+
+  "file_organization": {
+    "base_path": "./base/",
+    "personal_career": "./base/Yearwise Personal Highlights/visual/",
+    "professional_career": "./base/Yearwise Highlights in ND/visual/",
+    "personal_projects": "./base/Projectwise Personal Highlights/visual/",
+    "professional_projects": "./base/Projectwise Highlights in ND/visual/",
+    "components": "./components/",
+    "styles": "./styles/",
+    "config": "./config/"
+  },
+
+  "seo_meta": {
+    "keywords": ["career visualization", "data visualization", "Ankur Mursalin", "career progression", "technology mastery", "project portfolio", "professional development"],
+    "og_title": "Career Highlights Visualization - Ankur Mursalin",
+    "og_description": "Professional data visualization showcasing 9 years of career progression, 34+ projects, and technology mastery across multiple domains",
+    "og_image": "comprehensive_career_dashboard.png",
+    "twitter_card": "summary_large_image"
+  }
+}

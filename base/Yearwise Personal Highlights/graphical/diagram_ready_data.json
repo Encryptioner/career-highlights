@@ -1,0 +1,82 @@
+{
+  "timeline": [
+    {"year": 2016, "projects": 1, "complexity": 1, "focus": "OOP Foundation"},
+    {"year": 2017, "projects": 1, "complexity": 3, "focus": "Database Systems"},
+    {"year": 2018, "projects": 2, "complexity": 4, "focus": "ML & Graphics"},
+    {"year": 2019, "projects": 1, "complexity": 4, "focus": "Real-Time Systems"},
+    {"year": 2022, "projects": 2, "complexity": 5, "focus": "Full-Stack Enterprise"},
+    {"year": 2024, "projects": 1, "complexity": 2, "focus": "Professional Presence"},
+    {"year": 2025, "projects": 6, "complexity": 5, "focus": "AI Innovation"}
+  ],
+
+  "technology_evolution": [
+    {"stage": "Foundation", "years": "2016-2017", "techs": ["C", "Java", "PostgreSQL", "PHP"]},
+    {"stage": "Advanced", "years": "2018-2019", "techs": ["Python", "OpenGL", "Django", "Redis"]},
+    {"stage": "Modern", "years": "2022", "techs": ["TypeScript", "Vue.js", "NestJS", "MongoDB"]},
+    {"stage": "Innovation", "years": "2024-2025", "techs": ["React", "WebAssembly", "PWA", "AI"]}
+  ],
+
+  "project_categories": {
+    "AI/WebAssembly": {"count": 2, "examples": ["Local Whisper", "De-Encrypt Hub"]},
+    "PWA/Modern Web": {"count": 3, "examples": ["Markdown to Slide", "LinkedInify", "Fish & Boat"]},
+    "Systems Programming": {"count": 1, "examples": ["CCSH Shell"]},
+    "Learning Platforms": {"count": 2, "examples": ["Laravel Platform", "Django Platform"]},
+    "Full-Stack Boilerplates": {"count": 2, "examples": ["Vue3 Boilerplate", "NestJS Boilerplate"]},
+    "Real-Time Apps": {"count": 1, "examples": ["Text-Bomb Chat"]},
+    "ML Research": {"count": 1, "examples": ["Facial Expression Recognition"]},
+    "Graphics/Games": {"count": 2, "examples": ["OpenGL Car Game", "BaghBondi Game"]},
+    "Academic Systems": {"count": 1, "examples": ["E-Examination System"]},
+    "Portfolio": {"count": 1, "examples": ["Personal Website"]}
+  },
+
+  "skills_by_year": {
+    "2016": ["Java", "OOP", "Game Development"],
+    "2017": ["PostgreSQL", "Database Design", "Web Development"],
+    "2018": ["Python", "TensorFlow", "OpenGL", "Computer Vision"],
+    "2019": ["Django Channels", "WebSockets", "Redis", "Celery"],
+    "2022": ["TypeScript", "Vue.js", "NestJS", "MongoDB", "Docker"],
+    "2024": ["Responsive Design", "Performance Optimization", "GitHub Pages"],
+    "2025": ["WebAssembly", "Browser AI", "PWA", "Systems Programming"]
+  },
+
+  "complexity_distribution": {
+    "Level 1": {"count": 3, "projects": ["Personal Portfolio", "BaghBondi", "Learning Platforms"]},
+    "Level 2": {"count": 3, "projects": ["De-Encrypt Hub", "Fish & Boat", "OpenGL Car"]},
+    "Level 3": {"count": 3, "projects": ["Markdown to Slide", "LinkedInify", "E-Examination"]},
+    "Level 4": {"count": 3, "projects": ["CCSH Shell", "Text-Bomb", "Vue3 Boilerplate"]},
+    "Level 5": {"count": 3, "projects": ["Facial Recognition", "NestJS Boilerplate", "Local Whisper"]}
+  },
+
+  "innovation_milestones": [
+    {"year": 2016, "milestone": "First OOP Implementation"},
+    {"year": 2017, "milestone": "Database-Driven Applications"},
+    {"year": 2018, "milestone": "ML Research & Graphics"},
+    {"year": 2019, "milestone": "Real-Time Communication"},
+    {"year": 2022, "milestone": "Enterprise Architecture"},
+    {"year": 2024, "milestone": "Professional Presence"},
+    {"year": 2025, "milestone": "Browser AI Breakthrough"}
+  ],
+
+  "impact_metrics": {
+    "open_source_percentage": 93,
+    "live_demos_percentage": 67,
+    "production_ready_percentage": 53,
+    "educational_value_percentage": 80,
+    "modern_pwa_percentage": 27
+  },
+
+  "language_usage": {
+    "JavaScript/TypeScript": 14,
+    "Python": 5,
+    "C/C++": 3,
+    "Java": 2,
+    "PHP": 2
+  },
+
+  "deployment_platforms": {
+    "GitHub Pages": 6,
+    "Heroku": 2,
+    "Render": 1,
+    "Local/Desktop": 6
+  }
+}

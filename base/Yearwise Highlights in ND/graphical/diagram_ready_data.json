@@ -1,0 +1,111 @@
+{
+  "career_timeline": [
+    {"year": 2019, "role": "Software Engineer", "projects": 4, "focus": "Foundation Building", "complexity": 2, "users": 0},
+    {"year": 2020, "role": "Software Engineer", "projects": 4, "focus": "Advanced Mobile & E-Commerce", "complexity": 3, "users": 0},
+    {"year": 2021, "role": "Software Engineer", "projects": 4, "focus": "Financial Platforms", "complexity": 3, "users": 0},
+    {"year": 2022, "role": "Senior Software Engineer", "projects": 7, "focus": "Advanced Architecture", "complexity": 4, "users": 100000},
+    {"year": 2023, "role": "Senior Software Engineer", "projects": 8, "focus": "Scalable AI Platforms", "complexity": 4, "users": 200000},
+    {"year": 2024, "role": "Lead Software Engineer", "projects": 7, "focus": "Leadership Excellence", "complexity": 5, "users": 80000},
+    {"year": 2025, "role": "Lead Software Engineer", "projects": 8, "focus": "AI Integration & Architecture", "complexity": 5, "users": 80000}
+  ],
+
+  "role_progression": [
+    {"role": "Software Engineer", "years": "2019-2021", "duration": 3, "focus": "Foundation & Growth"},
+    {"role": "Senior Software Engineer", "years": "2022-2023", "duration": 2, "focus": "Technical Excellence"},
+    {"role": "Lead Software Engineer", "years": "2024-2025", "duration": 2, "focus": "Strategic Leadership"}
+  ],
+
+  "technology_evolution": [
+    {"category": "Languages", "progression": ["JavaScript", "TypeScript", "Python", "Dart/Flutter"]},
+    {"category": "Backend", "progression": ["Express", "NestJS", "Django", "Laravel"]},
+    {"category": "Frontend", "progression": ["React", "Vue.js", "Modern React", "Advanced TypeScript"]},
+    {"category": "Mobile", "progression": ["React Native", "Flutter", "Cross-Platform"]},
+    {"category": "AI", "progression": ["Basic Integration", "OpenAI API", "Real-time Audio", "WebAssembly"]},
+    {"category": "Infrastructure", "progression": ["Basic Deployment", "Docker", "CI/CD", "Multi-tenant SaaS"]}
+  ],
+
+  "project_categories": {
+    "AI & Machine Learning": {"count": 12, "complexity": 4.5, "examples": ["AI Mate", "PixelsCraft", "Genius"], "color": "#FF6B6B", "icon": "🤖"},
+    "Full-Stack Web Applications": {"count": 15, "complexity": 3.8, "examples": ["Biddaan", "FT Education", "Daily Stocks"], "color": "#4ECDC4", "icon": "🌐"},
+    "Mobile Applications": {"count": 8, "complexity": 4.0, "examples": ["AI Mate App", "PixelsCraft App", "Traffic Case"], "color": "#45B7D1", "icon": "📱"},
+    "Enterprise Systems": {"count": 10, "complexity": 4.2, "examples": ["BD Gas", "Bikribatta ERP", "Second Line"], "color": "#96CEB4", "icon": "🏢"},
+    "E-Commerce Platforms": {"count": 6, "complexity": 3.5, "examples": ["Bikribatta E-Commerce", "Daency"], "color": "#FCEA2B", "icon": "🛒"},
+    "Real-Time Systems": {"count": 7, "complexity": 4.3, "examples": ["AI Chat Bot", "Voice Over ChatGPT"], "color": "#FF9F43", "icon": "⚡"},
+    "Admin Dashboards": {"count": 11, "complexity": 3.2, "examples": ["Admin panels for various projects"], "color": "#A29BFE", "icon": "📊"},
+    "Government Solutions": {"count": 4, "complexity": 4.0, "examples": ["BD Traffic Police", "BD Gas"], "color": "#6C5CE7", "icon": "🏛️"},
+    "Educational Platforms": {"count": 5, "complexity": 3.7, "examples": ["FT Education", "CLS Learning"], "color": "#FD79A8", "icon": "🎓"}
+  },
+
+  "visualization_config": {
+    "primary_colors": ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FCEA2B", "#FF9F43", "#A29BFE", "#6C5CE7", "#FD79A8"],
+    "background_gradient": ["#667eea", "#764ba2"],
+    "text_colors": {"primary": "#2D3748", "secondary": "#4A5568", "accent": "#1A202C"},
+    "chart_style": "modern_gradient"
+  },
+
+  "skills_by_year": {
+    "2019": ["React Native", "Government Systems", "ERP Foundations", "PostgreSQL"],
+    "2020": ["Geolocation", "AI Integration", "E-Commerce", "Push Notifications"],
+    "2021": ["Financial Systems", "Real-Time Architecture", "Social Auth", "Vue.js"],
+    "2022": ["TypeScript Mastery", "Testing Frameworks", "Blockchain", "Docker"],
+    "2023": ["Flutter Excellence", "Advanced AI", "200k+ User Scale", "MongoDB"],
+    "2024": ["Team Leadership", "Enterprise Architecture", "Multi-tenancy", "Mentorship"],
+    "2025": ["Real-time Audio AI", "Multi-company SaaS", "Strategic Planning", "WebAssembly"]
+  },
+
+  "user_scale_milestones": [
+    {"year": 2019, "scale": "Foundation", "users": 0, "milestone": "Learning and Building"},
+    {"year": 2022, "scale": "Professional", "users": 100000, "milestone": "Senior Engineer Promotion"},
+    {"year": 2023, "scale": "Enterprise", "users": 200000, "milestone": "Peak User Scale"},
+    {"year": 2024, "scale": "Leadership", "users": 80000, "milestone": "Lead Engineer Promotion"},
+    {"year": 2025, "scale": "Strategic", "users": 80000, "milestone": "Multi-company Architecture"}
+  ],
+
+  "innovation_milestones": [
+    {"year": 2019, "milestone": "Mobile Development Foundation"},
+    {"year": 2020, "milestone": "Advanced Geolocation & AI Integration"},
+    {"year": 2021, "milestone": "Financial Platforms & Real-Time Systems"},
+    {"year": 2022, "milestone": "Senior Promotion & 100k+ Users"},
+    {"year": 2023, "milestone": "200k+ Users & Advanced AI"},
+    {"year": 2024, "milestone": "Lead Promotion & Enterprise AI"},
+    {"year": 2025, "milestone": "Revolutionary Real-Time Audio AI"}
+  ],
+
+  "leadership_metrics": {
+    "interns_trained": 5,
+    "technical_sessions": 6,
+    "project_proposals": 8,
+    "years_of_mentorship": 3,
+    "cross_functional_projects": 12
+  },
+
+  "technology_mastery": {
+    "JavaScript": {"years": 7, "proficiency": 9, "projects": 25},
+    "TypeScript": {"years": 4, "proficiency": 8, "projects": 15},
+    "React": {"years": 6, "proficiency": 9, "projects": 20},
+    "Vue.js": {"years": 3, "proficiency": 7, "projects": 8},
+    "Node.js": {"years": 6, "proficiency": 8, "projects": 18},
+    "Python": {"years": 4, "proficiency": 7, "projects": 10},
+    "Flutter": {"years": 4, "proficiency": 8, "projects": 6},
+    "MongoDB": {"years": 7, "proficiency": 8, "projects": 15},
+    "PostgreSQL": {"years": 4, "proficiency": 7, "projects": 8},
+    "Docker": {"years": 5, "proficiency": 8, "projects": 12}
+  },
+
+  "complexity_distribution": {
+    "Level 1 (Foundation)": {"count": 5, "percentage": 12},
+    "Level 2 (Intermediate)": {"count": 8, "percentage": 20},
+    "Level 3 (Professional)": {"count": 15, "percentage": 37},
+    "Level 4 (Advanced)": {"count": 10, "percentage": 25},
+    "Level 5 (Revolutionary)": {"count": 2, "percentage": 6}
+  },
+
+  "industry_impact": {
+    "Government Solutions": 4,
+    "Educational Technology": 5,
+    "Financial Technology": 3,
+    "Artificial Intelligence": 12,
+    "E-Commerce": 6,
+    "Mobile Technology": 8
+  }
+}
