@@ -73,7 +73,7 @@ Throughout each stage of this journey, I have stayed true to core principles: le
 ### Local Whisper: Private Chat
 
 - **Overview**: Revolutionary browser-based AI chat assistant running LLMs entirely in the browser
-- **References**: [Live App](https://encryptioner.github.io/in-browser-llm-inference/) | [GitHub](https://github.com/Encryptioner/in-browser-llm-inference)
+- **References**: [Live App](https://encryptioner.github.io/private-chat/) | [GitHub](https://github.com/Encryptioner/private-chat)
 - **Highlights**
     - **Revolutionary Browser AI**: Pioneered running complete Large Language Models (SmolLM2, Llama 3.2) entirely in the browser using WebAssembly
     - **Plug-and-Play Embed System**: Created seamless integration solution with single script tag implementation

@@ -12,8 +12,8 @@ This document contains summarized information about projects mentioned in the hi
 - **Description**: Revolutionary browser-based AI chat assistant running Large Language Models entirely in the browser using WebAssembly
 - **Keywords**: WebAssembly, React 18, TypeScript, Privacy-First, AI, LLM, Browser-Based
 - **References**:
-  - Live App: https://encryptioner.github.io/in-browser-llm-inference/
-  - GitHub: https://github.com/Encryptioner/in-browser-llm-inference
+  - Live App: https://encryptioner.github.io/private-chat/
+  - GitHub: https://github.com/Encryptioner/private-chat
 
 #### Markdown to Slide
 - **Description**: Modern browser-based presentation platform transforming Markdown into professional slide decks with PWA capabilities

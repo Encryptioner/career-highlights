@@ -69,8 +69,8 @@ At the core, my focus has always been on building maintainable, impactful soluti
     - **Development**: ESLint 9, Prettier 3, concurrent development scripts
     - **Deployment**: GitHub Actions, automatic model downloading
 - **References**
-    - **Public Website:** [https://encryptioner.github.io/in-browser-llm-inference/](https://encryptioner.github.io/in-browser-llm-inference/)
-    - **Github:** [https://github.com/Encryptioner/in-browser-llm-inference](https://github.com/Encryptioner/in-browser-llm-inference)
+    - **Public Website:** [https://encryptioner.github.io/private-chat/](https://encryptioner.github.io/private-chat/)
+    - **Github:** [https://github.com/Encryptioner/private-chat](https://github.com/Encryptioner/private-chat)
 
 ### Public (Static Website with Framework)
 
