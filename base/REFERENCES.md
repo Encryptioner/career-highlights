@@ -29,6 +29,13 @@ This document contains summarized information about projects mentioned in the hi
   - Live App: https://encryptioner.github.io/linkedinify
   - GitHub: https://github.com/Encryptioner/linkedinify
 
+#### Service Charge Bill Calculator
+- **Description**: Modern web application for creating and managing service charge bills for apartment buildings with multi-language support and PWA capabilities
+- **Keywords**: Astro 5, React 19, TypeScript, PDF Export, PWA, Multi-language, Privacy-First
+- **References**:
+  - Live App: https://encryptioner.github.io/service-charge/
+  - GitHub: https://github.com/Encryptioner/service-charge
+
 #### Fish & Boat Ladder Game
 - **Description**: Modern browser-based variant of classic Snakes and Ladders with nautical theme and PWA functionality
 - **Keywords**: Game Development, PWA, Vanilla JavaScript, Board Game, Nautical Theme
@@ -229,7 +236,7 @@ This document contains summarized information about projects mentioned in the hi
 
 ## Summary Statistics
 
-- **Personal Projects**: 16+ projects (2016-2025)
+- **Personal Projects**: 17+ projects (2016-2025)
 - **Nerddevs Projects**: 18+ professional projects (2019-2025)
 - **Technology Evolution**: Java OOP → WebAssembly AI
 - **User Impact**: 200k+ users served across platforms
