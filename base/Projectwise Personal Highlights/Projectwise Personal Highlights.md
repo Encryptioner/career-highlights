@@ -140,6 +140,35 @@ At the core, my focus has always been on building maintainable, impactful soluti
 
 ---
 
+# Service Charge Bill Calculator (2025)
+
+**Project Overview:** Developed a modern web application for creating and managing service charge bills for apartment buildings. Successfully delivered a comprehensive billing solution with multi-language support, flexible billing options, professional PDF export, and PWA functionality for offline use with auto-save capabilities.
+
+- **Key Tools**
+    - **Core Stack**: Astro 5, React 19, TypeScript 5, Node.js 22
+    - **Build System**: Vite with pnpm package management
+    - **Styling**: Tailwind CSS 4 with custom design tokens
+    - **UI Components**: React with TypeScript integration
+    - **PDF Generation**: jsPDF with html2canvas for professional bill export
+    - **Internationalization**: Multi-language support (English, Bangla)
+    - **PWA Features**: Service worker, offline functionality, manifest
+    - **Deployment**: GitHub Actions with dual deployment modes (GitHub Pages/Custom Domain)
+- **References**
+    - **Public Website:** [https://encryptioner.github.io/service-charge/](https://encryptioner.github.io/service-charge/)
+    - **Github:** [https://github.com/Encryptioner/service-charge](https://github.com/Encryptioner/service-charge)
+
+### Public (Static Website with Framework)
+
+- **Highlights**
+    - **Highlights of 2025**
+        - **Multi-Category Billing System**: Built comprehensive service charge calculator supporting unlimited categories with flexible billing types (single flat or divided across all flats)
+        - **Multi-Language Architecture**: Implemented modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
+        - **Professional PDF Export**: Developed sophisticated PDF generation handling Tailwind CSS v4 OKLCH color conversion to RGB for accurate rendering with print functionality
+        - **PWA Excellence**: Created Progressive Web App with service worker caching, offline functionality, and auto-save using localStorage for data persistence
+        - **Privacy-First Design**: Achieved complete client-side processing with no server communication, ensuring all billing data stays private in the user's browser
+
+---
+
 # Fish & Boat Ladder Game (2025)
 
 **Project Overview:** Developed a modern, browser-based variant of the classic Snakes and Ladders board game (Ludo), featuring fish and boats instead of traditional elements. Successfully created a comprehensive two-player game with PWA capabilities, offline functionality, and mobile-optimized responsive design.

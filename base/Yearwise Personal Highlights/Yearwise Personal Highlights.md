@@ -103,6 +103,17 @@ Throughout each stage of this journey, I have stayed true to core principles: le
     - **Professional LinkedIn Preview**: Created real-time preview system supporting both light/dark modes
     - **PWA Excellence**: Achieved comprehensive Progressive Web App implementation with service worker caching
 
+### Service Charge Bill Calculator
+
+- **Overview**: Modern web application for creating and managing service charge bills for apartment buildings
+- **References**: [Live App](https://encryptioner.github.io/service-charge/) | [GitHub](https://github.com/Encryptioner/service-charge)
+- **Highlights**
+    - **Multi-Category Billing System**: Built comprehensive service charge calculator supporting unlimited categories with flexible billing types (single flat or divided across all flats)
+    - **Multi-Language Architecture**: Implemented modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
+    - **Professional PDF Export**: Developed sophisticated PDF generation handling Tailwind CSS v4 OKLCH color conversion to RGB for accurate rendering with print functionality
+    - **PWA Excellence**: Created Progressive Web App with service worker caching, offline functionality, and auto-save using localStorage for data persistence
+    - **Privacy-First Design**: Achieved complete client-side processing with no server communication, ensuring all billing data stays private in the user's browser
+
 ### Fish & Boat Ladders Game
 
 - **Overview**: Modern browser-based variant of classic Snakes and Ladders with nautical theme
