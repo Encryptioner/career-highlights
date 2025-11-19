@@ -103,16 +103,18 @@ Throughout each stage of this journey, I have stayed true to core principles: le
     - **Professional LinkedIn Preview**: Created real-time preview system supporting both light/dark modes
     - **PWA Excellence**: Achieved comprehensive Progressive Web App implementation with service worker caching
 
-### Service Charge Bill Calculator
+### Building Management System
 
-- **Overview**: Modern web application for creating and managing service charge bills for apartment buildings
-- **References**: [Live App](https://encryptioner.github.io/service-charge/) | [GitHub](https://github.com/Encryptioner/service-charge)
+- **Overview**: Complete building management solution for apartment complexes - manage residents, flats, and bills with multi-lingual support, import/export, and PDF/image download
+- **References**: [Live App](https://encryptioner.github.io/building-management/) | [GitHub](https://github.com/Encryptioner/building-management)
 - **Highlights**
-    - **Multi-Category Billing System**: Built comprehensive service charge calculator supporting unlimited categories with flexible billing types (single flat or divided across all flats)
-    - **Multi-Language Architecture**: Implemented modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
-    - **Professional PDF Export**: Developed sophisticated PDF generation handling Tailwind CSS v4 OKLCH color conversion to RGB for accurate rendering with print functionality
-    - **PWA Excellence**: Created Progressive Web App with service worker caching, offline functionality, and auto-save using localStorage for data persistence
-    - **Privacy-First Design**: Achieved complete client-side processing with no server communication, ensuring all billing data stays private in the user's browser
+    - **Dual-Tab Application Architecture**: Built comprehensive system with Bills tab (service charge calculator with calculated/blank form modes) and Residents tab (complete building and resident management)
+    - **Advanced Resident Management**: Implemented complete building setup wizard, flat management system with floor organization, resident tracking with NID and move-in dates, and parking space management (motorcycle/car)
+    - **Flexible Billing System**: Created multi-category service charge calculator with unlimited categories, flexible billing types (single flat or all-building), owner-only charges, and excluded flats support
+    - **Data Import/Export Excellence**: Developed comprehensive JSON export/import system for both building and bill data with timestamps, validation, and separate storage keys for data integrity
+    - **PDF Generation**: Implemented sophisticated PDF export using custom package with full-page capture, smart page splitting, OKLCH to RGB conversion for Tailwind CSS v4, and print functionality
+    - **Multi-Language Architecture**: Created modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
+    - **PWA & Privacy Excellence**: Achieved complete offline functionality with service worker caching, auto-save using localStorage, and client-side processing ensuring all data stays private in the browser
 
 ### Fish & Boat Ladders Game
 

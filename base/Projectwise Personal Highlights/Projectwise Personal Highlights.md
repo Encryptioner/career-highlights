@@ -140,32 +140,34 @@ At the core, my focus has always been on building maintainable, impactful soluti
 
 ---
 
-# Service Charge Bill Calculator (2025)
+# Building Management System (2025)
 
-**Project Overview:** Developed a modern web application for creating and managing service charge bills for apartment buildings. Successfully delivered a comprehensive billing solution with multi-language support, flexible billing options, professional PDF export, and PWA functionality for offline use with auto-save capabilities.
+**Project Overview:** Developed a complete building management solution for apartment complexes - manage residents, flats, and bills with multi-lingual support, import/export, and PDF/image download. Successfully delivered a comprehensive dual-tab application with resident management, billing calculator, multi-language support, and PWA functionality for offline use with auto-save capabilities.
 
 - **Key Tools**
     - **Core Stack**: Astro 5, React 19, TypeScript 5, Node.js 22
     - **Build System**: Vite with pnpm package management
     - **Styling**: Tailwind CSS 4 with custom design tokens
     - **UI Components**: React with TypeScript integration
-    - **PDF Generation**: jsPDF with html2canvas for professional bill export
+    - **PDF Generation**: Custom @encryptioner/html-to-pdf-generator package (jsPDF + html2canvas)
     - **Internationalization**: Multi-language support (English, Bangla)
     - **PWA Features**: Service worker, offline functionality, manifest
     - **Deployment**: GitHub Actions with dual deployment modes (GitHub Pages/Custom Domain)
 - **References**
-    - **Public Website:** [https://encryptioner.github.io/service-charge/](https://encryptioner.github.io/service-charge/)
-    - **Github:** [https://github.com/Encryptioner/service-charge](https://github.com/Encryptioner/service-charge)
+    - **Public Website:** [https://encryptioner.github.io/building-management/](https://encryptioner.github.io/building-management/)
+    - **Github:** [https://github.com/Encryptioner/building-management](https://github.com/Encryptioner/building-management)
 
 ### Public (Static Website with Framework)
 
 - **Highlights**
     - **Highlights of 2025**
-        - **Multi-Category Billing System**: Built comprehensive service charge calculator supporting unlimited categories with flexible billing types (single flat or divided across all flats)
-        - **Multi-Language Architecture**: Implemented modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
-        - **Professional PDF Export**: Developed sophisticated PDF generation handling Tailwind CSS v4 OKLCH color conversion to RGB for accurate rendering with print functionality
-        - **PWA Excellence**: Created Progressive Web App with service worker caching, offline functionality, and auto-save using localStorage for data persistence
-        - **Privacy-First Design**: Achieved complete client-side processing with no server communication, ensuring all billing data stays private in the user's browser
+        - **Dual-Tab Application Architecture**: Built comprehensive system with Bills tab (service charge calculator with calculated/blank form modes) and Residents tab (complete building and resident management)
+        - **Advanced Resident Management**: Implemented complete building setup wizard, flat management system with floor organization, resident tracking with NID and move-in dates, and parking space management (motorcycle/car)
+        - **Flexible Billing System**: Created multi-category service charge calculator with unlimited categories, flexible billing types (single flat or all-building), owner-only charges, and excluded flats support
+        - **Data Import/Export Excellence**: Developed comprehensive JSON export/import system for both building and bill data with timestamps, validation, and separate storage keys for data integrity
+        - **PDF Generation**: Implemented sophisticated PDF export using custom package with full-page capture, smart page splitting, OKLCH to RGB conversion for Tailwind CSS v4, and print functionality
+        - **Multi-Language Architecture**: Created modular internationalization system with English and Bangla support, easily extensible to additional languages through configuration
+        - **PWA & Privacy Excellence**: Achieved complete offline functionality with service worker caching, auto-save using localStorage, and client-side processing ensuring all data stays private in the browser
 
 ---
 

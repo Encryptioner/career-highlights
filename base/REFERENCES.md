@@ -29,12 +29,12 @@ This document contains summarized information about projects mentioned in the hi
   - Live App: https://encryptioner.github.io/linkedinify
   - GitHub: https://github.com/Encryptioner/linkedinify
 
-#### Service Charge Bill Calculator
-- **Description**: Modern web application for creating and managing service charge bills for apartment buildings with multi-language support and PWA capabilities
-- **Keywords**: Astro 5, React 19, TypeScript, PDF Export, PWA, Multi-language, Privacy-First
+#### Building Management System
+- **Description**: Complete building management solution for apartment complexes. Manage residents, flats, and bills with import/export, PDF/image download, and multi-language support
+- **Keywords**: Astro 5, React 19, TypeScript, Building Management, Resident Management, PDF Export, PWA, Multi-language, Privacy-First
 - **References**:
-  - Live App: https://encryptioner.github.io/service-charge/
-  - GitHub: https://github.com/Encryptioner/service-charge
+  - Live App: https://encryptioner.github.io/building-management/
+  - GitHub: https://github.com/Encryptioner/building-management
 
 #### Fish & Boat Ladder Game
 - **Description**: Modern browser-based variant of classic Snakes and Ladders with nautical theme and PWA functionality
