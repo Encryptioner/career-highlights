@@ -4,9 +4,9 @@ Created: August 3, 2025 2:03 PM
 Date: December 31, 2025
 Tags: Special Entry
 
-**Projectwise Highlights** of [Mir Mursalin Ankur’s](https://encryptioner.github.io/) work outside the regular office
+**Projectwise Highlights** of [Mir Mursalin Ankur's](https://encryptioner.github.io/) work outside the regular office
 
-*Last Updated: September 21, 2025*
+*Last Updated: November 22, 2025*
 
 ---
 
@@ -42,6 +42,7 @@ At the core, my focus has always been on building maintainable, impactful soluti
 
 ### **Project Complexity Spectrum**
 
+- **NPM Package Level**: Published npm packages with framework adapters and comprehensive documentation
 - **Research Level**: Machine learning thesis with multi-dataset validation
 - **Enterprise Level**: Full-stack monorepo with authentication and microservices
 - **Systems Level**: Unix shell implementation with cross-platform support
@@ -81,6 +82,39 @@ At the core, my focus has always been on building maintainable, impactful soluti
         - **Advanced Model Management**: Built sophisticated system supporting multiple GGUF model formats with automatic caching, offline functionality, and custom model upload capabilities (up to 2GB)
         - **WebAssembly Optimization**: Implemented high-performance inference engine using Wllama with proper CORS headers, memory management, and context window optimization for efficient chat conversations
         - **Zero-Backend Architecture**: Achieved complete client-side AI processing with speech synthesis integration, responsive design, and production-ready deployment pipeline for maximum accessibility
+
+---
+
+# HTML to PDF Generator (2025)
+
+**Project Overview:** Developed a modern, framework-agnostic NPM package for converting HTML content to professional multi-page PDFs with smart pagination and rich features. Successfully published first NPM package with comprehensive documentation, TypeScript support, and framework adapters for React, Vue, Svelte, and vanilla JS.
+
+- **Key Tools**
+    - **Core Stack**: TypeScript 5.7, pnpm 9.0, Node.js 18+
+    - **PDF Generation**: jsPDF 2.5, html2canvas 1.4 for rendering
+    - **Build System**: TypeScript compiler with strict mode, ESM output
+    - **Framework Adapters**: React, Vue, Svelte, vanilla JavaScript
+    - **Color System**: OKLCH color support with automatic Tailwind CSS v4 compatibility
+    - **Testing**: Manual testing framework with browser compatibility testing
+    - **Documentation**: Comprehensive README, CONTRIBUTING.md, feature implementation status
+    - **Package Management**: NPM publishing, semantic versioning, org-scoped package (@encryptioner)
+- **References**
+    - **NPM Package:** [https://www.npmjs.com/package/@encryptioner/html-to-pdf-generator](https://www.npmjs.com/package/@encryptioner/html-to-pdf-generator)
+    - **Github:** [https://github.com/Encryptioner/html-to-pdf-generator](https://github.com/Encryptioner/html-to-pdf-generator)
+    - **Blog:** [https://dev.to/mir_mursalin_ankur/publishing-your-first-npm-package-a-real-world-guide-that-actually-helps-4l4](https://dev.to/mir_mursalin_ankur/publishing-your-first-npm-package-a-real-world-guide-that-actually-helps-4l4)
+
+### Code & Blog & Presentation
+
+- **Highlights**
+    - **Highlights of 2025**
+        - **First NPM Package Publication**: Successfully published first NPM package with org-scoped naming (@encryptioner), navigating NPM's updated authentication system, classic token deprecation, and modern publishing workflow
+        - **Multi-Page PDF Generation**: Implemented sophisticated multi-page support with smart pagination, automatic page breaks, orphan prevention, and proper handling of tables with automatic header repetition across pages
+        - **Framework-Agnostic Architecture**: Designed universal API with specialized adapters for React, Vue, Svelte, and vanilla JavaScript, enabling seamless integration across any web framework or project
+        - **Advanced PDF Features**: Built comprehensive feature set including watermarks (text/image), dynamic headers/footers with variable support ({{pageNumber}}, {{totalPages}}, {{date}}, {{title}}), PDF metadata, password protection, and permission controls
+        - **Modern Development Practices**: Established TypeScript-first development with strict mode, comprehensive documentation, contributor guidelines, code of conduct, and proper semantic versioning for open-source excellence
+        - **OKLCH Color System Integration**: Pioneered automatic OKLCH to RGB color conversion for Tailwind CSS v4 compatibility, ensuring accurate color rendering in PDF output without manual color transformation
+        - **Production-Ready Features**: Implemented live PDF preview with real-time updates and debouncing, batch generation for combining multiple HTML sections, media type emulation for @media print styles, and custom CSS injection
+        - **Developer Experience Focus**: Created detailed documentation covering installation, basic usage, advanced features, framework-specific examples, API reference, and comprehensive contributing guidelines for open-source collaboration
 
 ---
 

@@ -62,7 +62,7 @@
       "color": "#4ECDC4",
       "description": "Individual career progression and growth",
       "timeline": "2016-2025",
-      "key_metrics": ["9+ Years Experience", "16+ Personal Projects", "Technology Evolution"]
+      "key_metrics": ["9+ Years Experience", "17+ Personal Projects", "Technology Evolution"]
     },
     "professional": {
       "name": "Nerddevs Professional",
@@ -74,9 +74,9 @@
     "personal-projects": {
       "name": "Personal Projects",
       "color": "#96CEB4",
-      "description": "16+ projects spanning 2016-2025",
+      "description": "17+ projects spanning 2016-2025",
       "timeline": "2016-2025",
-      "key_metrics": ["16+ Projects", "Java → WebAssembly Evolution", "Cross-Platform"]
+      "key_metrics": ["17+ Projects", "Java → NPM Packages Evolution", "Cross-Platform"]
     },
     "professional-projects": {
       "name": "Nerddevs Projects",
@@ -95,7 +95,7 @@
       "domain": "personal",
       "file": "yearwise_personal_highlghts_v1.png",
       "description": "Complete overview of personal career progression with project complexity timeline, technology evolution, and impact metrics",
-      "metrics": ["9+ Years", "93% Open Source", "67% Live Demos", "Technology Evolution"],
+      "metrics": ["9+ Years", "94% Open Source", "65% Live Demos", "Technology Evolution"],
       "featured": true,
       "tags": ["career", "timeline", "personal", "evolution", "impact"],
       "size": "1600x1200",
@@ -107,8 +107,8 @@
       "category": "projects",
       "domain": "personal-projects",
       "file": "projectwise_personal_highlights_v1.png",
-      "description": "Comprehensive overview of 16 major personal projects over 10 years with timeline, technology evolution, and innovation analysis",
-      "metrics": ["16 Projects", "10 Years", "AI & WebAssembly Innovation", "Technology Evolution"],
+      "description": "Comprehensive overview of 17 major personal projects over 10 years with timeline, technology evolution, and innovation analysis",
+      "metrics": ["17 Projects", "10 Years", "AI & NPM Package Innovation", "Technology Evolution"],
       "featured": true,
       "tags": ["projects", "personal", "innovation", "timeline", "technology"],
       "size": "1600x1200",
@@ -134,7 +134,7 @@
       "domain": "personal",
       "file": "comprehensive_career_dashboard.png",
       "description": "Complete career journey with timeline, technology evolution, and impact metrics",
-      "metrics": ["9+ Years Experience", "16+ Personal Projects", "Technology Evolution"],
+      "metrics": ["9+ Years Experience", "17+ Personal Projects", "Technology Evolution"],
       "featured": true,
       "tags": ["career", "overview", "dashboard", "timeline"],
       "size": "1600x1200",
@@ -224,8 +224,8 @@
       "category": "projects",
       "domain": "personal-projects",
       "file": "projectwise_comprehensive_dashboard.png",
-      "description": "Complete overview of 16+ personal projects spanning 2016-2025",
-      "metrics": ["16+ Projects", "9 Years", "Java → WebAssembly Evolution"],
+      "description": "Complete overview of 17+ personal projects spanning 2016-2025",
+      "metrics": ["17+ Projects", "9 Years", "Java → NPM Packages Evolution"],
       "featured": true,
       "tags": ["projects", "portfolio", "personal", "evolution"],
       "size": "1600x1200",
@@ -300,7 +300,7 @@
 
   "summary_stats": {
     "total_years_tracked": 9,
-    "personal_projects": 16,
+    "personal_projects": 17,
     "professional_projects": 18,
     "total_users_impacted": "200K+",
     "technologies_mastered": 15,
@@ -322,9 +322,9 @@
   },
 
   "seo_meta": {
-    "keywords": ["career visualization", "data visualization", "Ankur Mursalin", "career progression", "technology mastery", "project portfolio", "professional development"],
+    "keywords": ["career visualization", "data visualization", "Ankur Mursalin", "career progression", "technology mastery", "project portfolio", "professional development", "npm packages"],
     "og_title": "Career Highlights Visualization - Ankur Mursalin",
-    "og_description": "Professional data visualization showcasing 9 years of career progression, 34+ projects, and technology mastery across multiple domains",
+    "og_description": "Professional data visualization showcasing 9 years of career progression, 35+ projects including published NPM packages, and technology mastery across multiple domains",
     "og_image": "comprehensive_career_dashboard.png",
     "twitter_card": "summary_large_image"
   }

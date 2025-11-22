@@ -4,9 +4,9 @@ Created: August 3, 2025 2:02 PM
 Date: December 31, 2025
 Tags: Special Entry
 
-**Yearly Highlights** of [Mir Mursalin Ankur’s](https://encryptioner.github.io/) work outside the regular office
+**Yearly Highlights** of [Mir Mursalin Ankur's](https://encryptioner.github.io/) work outside the regular office
 
-*Last Updated: September 21, 2025*
+*Last Updated: November 22, 2025*
 
 ---
 
@@ -63,10 +63,12 @@ Throughout each stage of this journey, I have stayed true to core principles: le
 
 ## Major Focus Areas
 
+- **NPM Package Development**: Publishing framework-agnostic libraries with TypeScript
 - **Privacy-First AI Applications**: Browser-based LLM inference using WebAssembly
 - **Modern Web Frameworks**: Next.js 15, React 19, advanced PWA implementations
 - **Educational Platforms**: Structured learning with Django 5.1 and Laravel
 - **Systems Programming**: Cross-platform Unix shell development in C
+- **Knowledge Sharing**: Technical blog writing and open-source documentation
 
 ## Key Projects
 
@@ -80,6 +82,19 @@ Throughout each stage of this journey, I have stayed true to core principles: le
     - **Advanced Model Management**: Built sophisticated system supporting multiple GGUF model formats with automatic caching
     - **WebAssembly Optimization**: Implemented high-performance inference engine using Wllama with proper CORS headers
     - **Zero-Backend Architecture**: Achieved complete client-side AI processing with speech synthesis integration
+
+### HTML to PDF Generator
+
+- **Overview**: Modern, framework-agnostic NPM package for converting HTML to professional multi-page PDFs
+- **References**: [NPM Package](https://www.npmjs.com/package/@encryptioner/html-to-pdf-generator) | [GitHub](https://github.com/Encryptioner/html-to-pdf-generator) | [Blog Post](https://dev.to/mir_mursalin_ankur/publishing-your-first-npm-package-a-real-world-guide-that-actually-helps-4l4)
+- **Highlights**
+    - **First NPM Package Publication**: Successfully published first NPM package with org-scoped naming (@encryptioner), navigating NPM's updated authentication system
+    - **Multi-Page PDF Generation**: Implemented sophisticated multi-page support with smart pagination, automatic page breaks, and orphan prevention
+    - **Framework-Agnostic Architecture**: Designed universal API with specialized adapters for React, Vue, Svelte, and vanilla JavaScript
+    - **Advanced PDF Features**: Built comprehensive feature set including watermarks, dynamic headers/footers with variables, PDF metadata, and password protection
+    - **OKLCH Color System Integration**: Pioneered automatic OKLCH to RGB color conversion for Tailwind CSS v4 compatibility
+    - **Production-Ready Features**: Implemented live PDF preview with real-time updates, batch generation, and media type emulation for @media print styles
+    - **Developer Experience Focus**: Created detailed documentation covering installation, basic usage, advanced features, and comprehensive contributing guidelines
 
 ### Markdown to Slide
 
@@ -344,7 +359,9 @@ Throughout each stage of this journey, I have stayed true to core principles: le
 
 ### **2025**: Cutting-Edge Innovation
 
+- NPM package publishing and library development
 - AI integration and WebAssembly optimization
 - Privacy-first application development
 - Progressive Web App excellence
 - Cross-platform systems programming
+- Technical writing and knowledge sharing
