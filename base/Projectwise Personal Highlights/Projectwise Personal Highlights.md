@@ -110,10 +110,9 @@ At the core, my focus has always been on building maintainable, impactful soluti
         - **First NPM Package Publication**: Successfully published first NPM package with org-scoped naming (@encryptioner), navigating NPM's updated authentication system, classic token deprecation, and modern publishing workflow
         - **Multi-Page PDF Generation**: Implemented sophisticated multi-page support with smart pagination, automatic page breaks, orphan prevention, and proper handling of tables with automatic header repetition across pages
         - **Framework-Agnostic Architecture**: Designed universal API with specialized adapters for React, Vue, Svelte, and vanilla JavaScript, enabling seamless integration across any web framework or project
-        - **Advanced PDF Features**: Built comprehensive feature set including watermarks (text/image), dynamic headers/footers with variable support ({{pageNumber}}, {{totalPages}}, {{date}}, {{title}}), PDF metadata, password protection, and permission controls
+        - **Advanced PDF Features**: Built comprehensive feature set including watermarks (text/image), dynamic headers/footers with variable support, batch generation for combining multiple HTML sections, PDF metadata, password protection, and permission controls
         - **Modern Development Practices**: Established TypeScript-first development with strict mode, comprehensive documentation, contributor guidelines, code of conduct, and proper semantic versioning for open-source excellence
         - **OKLCH Color System Integration**: Pioneered automatic OKLCH to RGB color conversion for Tailwind CSS v4 compatibility, ensuring accurate color rendering in PDF output without manual color transformation
-        - **Production-Ready Features**: Implemented live PDF preview with real-time updates and debouncing, batch generation for combining multiple HTML sections, media type emulation for @media print styles, and custom CSS injection
         - **Developer Experience Focus**: Created detailed documentation covering installation, basic usage, advanced features, framework-specific examples, API reference, and comprehensive contributing guidelines for open-source collaboration
 
 ---
