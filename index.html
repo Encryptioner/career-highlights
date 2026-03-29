@@ -165,6 +165,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="./components/analytics.js"></script>
     <script src="./components/HighlightsGallery.js"></script>
 
     <script>
@@ -256,12 +257,94 @@
         // Error handling
         window.addEventListener('error', function(e) {
             console.error('Global error:', e.error);
+            trackEvent({
+                name: 'error_occurred',
+                params: {
+                    category: 'global',
+                    action: 'uncaught_error',
+                    error: sanitizeError(e.message || String(e.error)),
+                },
+            });
         });
 
         // Unhandled promise rejection handling
         window.addEventListener('unhandledrejection', function(e) {
             console.error('Unhandled promise rejection:', e.reason);
+            trackEvent({
+                name: 'error_occurred',
+                params: {
+                    category: 'global',
+                    action: 'unhandled_rejection',
+                    error: sanitizeError(e.reason instanceof Error ? e.reason.message : String(e.reason)),
+                },
+            });
         });
+
+        // External link tracking
+        (function wireExternalLinks() {
+            /** @type {Record<string, 'portfolio' | 'linkedin' | 'github' | 'blog'>} */
+            const DESTINATION_MAP = {
+                'encryptioner.github.io':          'portfolio',
+                'www.linkedin.com':                'linkedin',
+                'linkedin.com':                    'linkedin',
+                'github.com':                      'github',
+                'nerddevs.com':                    'blog',
+            };
+
+            document.querySelectorAll('a[href^="http"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function() {
+                    try {
+                        const url = new URL(anchor.href);
+                        const destination = DESTINATION_MAP[url.hostname] || 'portfolio';
+                        const label = (anchor.textContent || '').trim().slice(0, 50);
+                        trackEvent({
+                            name: 'external_link_clicked',
+                            params: { label: label, destination: destination },
+                        });
+                    } catch (_) { /* malformed href — ignore */ }
+                });
+            });
+        })();
+
+        // Section scroll tracking (fires once per section per page load)
+        (function wireSectionObserver() {
+            if (!('IntersectionObserver' in window)) return;
+
+            const observer = new IntersectionObserver(function(entries, obs) {
+                entries.forEach(function(entry) {
+                    if (!entry.isIntersecting) return;
+                    const section = entry.target.dataset.analyticsSection;
+                    if (section) {
+                        trackEvent({ name: 'section_scrolled', params: { section: section } });
+                    }
+                    obs.unobserve(entry.target);
+                });
+            }, { threshold: 0.5 });
+
+            // Gallery container and footer exist at page load; .highlights-header is
+            // rendered dynamically, so we observe it after the gallery is ready.
+            document.querySelectorAll('[data-analytics-section]').forEach(function(el) {
+                observer.observe(el);
+            });
+
+            // Attach section attributes to static elements (footer + gallery container).
+            // Script is at end of <body> so DOM is already available.
+            (function attachStaticSections() {
+                const footer = document.querySelector('.footer');
+                if (footer && !footer.dataset.analyticsSection) {
+                    footer.dataset.analyticsSection = 'footer';
+                    observer.observe(footer);
+                }
+                const galleryContainer = document.getElementById('highlights-gallery-container');
+                if (galleryContainer && !galleryContainer.dataset.analyticsSection) {
+                    galleryContainer.dataset.analyticsSection = 'gallery';
+                    observer.observe(galleryContainer);
+                }
+            })();
+
+            // Expose observer so HighlightsGallery can register .highlights-header after render
+            window._sectionObserver = observer;
+        })();
     </script>
 
     <style>
