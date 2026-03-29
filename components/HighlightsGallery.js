@@ -12,6 +12,9 @@ class HighlightsGallery {
     this.currentLightboxIndex = 0;
     this.filteredVisualizations = [];
 
+    // Analytics — track pan at most once per lightbox session
+    this._panTracked = false;
+
     // Zoom state management
     this.zoomLevel = 1;
     this.maxZoom = 4;
@@ -33,6 +36,15 @@ class HighlightsGallery {
       this.render();
       this.bindEvents();
 
+      // Register .highlights-header with the section observer (rendered dynamically)
+      if (window._sectionObserver) {
+        const heroEl = this.container.querySelector('.highlights-header');
+        if (heroEl && !heroEl.dataset.analyticsSection) {
+          heroEl.dataset.analyticsSection = 'hero';
+          window._sectionObserver.observe(heroEl);
+        }
+      }
+
       // Add a small delay to ensure DOM is fully rendered
       await new Promise(resolve => requestAnimationFrame(resolve));
 
@@ -40,6 +52,14 @@ class HighlightsGallery {
     } catch (error) {
       console.error('Failed to initialize HighlightsGallery:', error);
       this.renderError();
+      trackEvent({
+        name: 'error_occurred',
+        params: {
+          category: 'gallery',
+          action: 'init_failed',
+          error: sanitizeError(error instanceof Error ? error.message : String(error)),
+        },
+      });
       throw error; // Re-throw to handle in loading logic
     }
   }
@@ -201,7 +221,7 @@ class HighlightsGallery {
              alt="${viz.title}"
              class="card-image"
              loading="lazy"
-             onerror="this.src='./images/placeholder.png'">
+             onerror="this.src='./images/placeholder.png'; trackEvent({ name: 'error_occurred', params: { category: 'image', action: 'load_failed', error: sanitizeError(this.alt) } })">
 
         <div class="card-content">
           <h3 class="card-title">${viz.title}</h3>
@@ -369,9 +389,9 @@ class HighlightsGallery {
       const centerY = (e.clientY - rect.top) / rect.height;
 
       if (e.deltaY < 0) {
-        this.zoomAt(centerX, centerY, this.zoomStep);
+        this.zoomAt(centerX, centerY, this.zoomStep, 'scroll');
       } else {
-        this.zoomAt(centerX, centerY, -this.zoomStep);
+        this.zoomAt(centerX, centerY, -this.zoomStep, 'scroll');
       }
     });
 
@@ -401,6 +421,12 @@ class HighlightsGallery {
         this.panX = startPanX + deltaX;
         this.panY = startPanY + deltaY;
         this.updateImageTransform();
+
+        // Fire once per lightbox session
+        if (!this._panTracked) {
+          this._panTracked = true;
+          trackEvent({ name: 'viz_panned' });
+        }
       }
     });
 
@@ -458,6 +484,12 @@ class HighlightsGallery {
         this.panX = touchStartPanX + deltaX;
         this.panY = touchStartPanY + deltaY;
         this.updateImageTransform();
+
+        // Fire once per lightbox session
+        if (!this._panTracked) {
+          this._panTracked = true;
+          trackEvent({ name: 'viz_panned' });
+        }
       } else if (e.touches.length === 2) {
         // Two touch pinch zoom
         const touch1 = e.touches[0];
@@ -469,7 +501,7 @@ class HighlightsGallery {
 
         const scale = currentDistance / initialTouchDistance;
         const newZoom = Math.min(this.maxZoom, Math.max(this.minZoom, initialZoom * scale));
-        this.setZoom(newZoom);
+        this.setZoom(newZoom, 'pinch');
       }
     });
 
@@ -501,8 +533,10 @@ class HighlightsGallery {
         e.preventDefault();
         if (this.zoomLevel === 1) {
           this.setZoom(2);
+          trackEvent({ name: 'viz_zoomed', params: { method: 'double_tap', zoom_level: 200 } });
         } else {
           this.resetZoom();
+          trackEvent({ name: 'viz_zoomed', params: { method: 'double_tap', zoom_level: 100 } });
         }
       }
       lastTap = currentTime;
@@ -516,6 +550,9 @@ class HighlightsGallery {
 
     // Debug info
     console.log(`Filter changed to: ${filter}, showing ${this.filteredVisualizations.length} results`);
+
+    // Analytics
+    trackEvent({ name: 'category_filtered', params: { category: mapCategoryKey(filter) } });
   }
 
   setDomain(domain) {
@@ -525,6 +562,9 @@ class HighlightsGallery {
 
     // Debug info
     console.log(`Domain changed to: ${domain}, showing ${this.filteredVisualizations.length} results`);
+
+    // Analytics
+    trackEvent({ name: 'domain_filtered', params: { domain: mapDomainKey(domain) } });
   }
 
   updateFilteredVisualizations() {
@@ -604,8 +644,9 @@ class HighlightsGallery {
     const viz = this.filteredVisualizations[index];
     const lightbox = document.getElementById('lightbox');
 
-    // Reset zoom state
+    // Reset zoom state and per-session analytics flags
     this.resetZoom();
+    this._panTracked = false;
 
     // Update lightbox content - only image
     document.getElementById('lightbox-image').src = this.getImagePath(viz);
@@ -614,6 +655,16 @@ class HighlightsGallery {
     // Show lightbox
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden'; // Prevent body scroll
+
+    // Analytics
+    trackEvent({
+      name: 'viz_viewed',
+      params: {
+        title: viz.title,
+        domain: mapDomainKey(viz.domain),
+        category: mapCategoryKey(viz.category),
+      },
+    });
   }
 
   closeLightbox() {
@@ -623,6 +674,7 @@ class HighlightsGallery {
   }
 
   previousImage() {
+    const fromIndex = this.currentLightboxIndex;
     if (this.currentLightboxIndex > 0) {
       this.currentLightboxIndex--;
     } else {
@@ -630,9 +682,11 @@ class HighlightsGallery {
       this.currentLightboxIndex = this.filteredVisualizations.length - 1;
     }
     this.updateLightboxImage();
+    trackEvent({ name: 'viz_navigated', params: { direction: 'prev', from_index: fromIndex } });
   }
 
   nextImage() {
+    const fromIndex = this.currentLightboxIndex;
     if (this.currentLightboxIndex < this.filteredVisualizations.length - 1) {
       this.currentLightboxIndex++;
     } else {
@@ -640,6 +694,7 @@ class HighlightsGallery {
       this.currentLightboxIndex = 0;
     }
     this.updateLightboxImage();
+    trackEvent({ name: 'viz_navigated', params: { direction: 'next', from_index: fromIndex } });
   }
 
   updateLightboxImage() {
@@ -674,6 +729,12 @@ class HighlightsGallery {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
+    // Analytics
+    trackEvent({
+      name: 'viz_downloaded',
+      params: { title: viz.title, domain: mapDomainKey(viz.domain) },
+    });
   }
 
   renderError() {
@@ -689,11 +750,13 @@ class HighlightsGallery {
   zoomIn() {
     const newZoom = Math.min(this.maxZoom, this.zoomLevel + this.zoomStep);
     this.setZoom(newZoom);
+    trackEvent({ name: 'viz_zoomed', params: { method: 'button', zoom_level: Math.round(newZoom * 100) } });
   }
 
   zoomOut() {
     const newZoom = Math.max(this.minZoom, this.zoomLevel - this.zoomStep);
     this.setZoom(newZoom);
+    trackEvent({ name: 'viz_zoomed', params: { method: 'button', zoom_level: Math.round(newZoom * 100) } });
   }
 
   resetZoom() {
@@ -709,7 +772,11 @@ class HighlightsGallery {
     }
   }
 
-  setZoom(newZoom) {
+  /**
+   * @param {number} newZoom
+   * @param {'pinch' | 'button' | 'scroll' | 'double_tap'} [method] - omit to skip tracking
+   */
+  setZoom(newZoom, method) {
     this.zoomLevel = Math.min(this.maxZoom, Math.max(this.minZoom, newZoom));
     this.updateImageTransform();
     this.updateZoomLevel();
@@ -718,9 +785,19 @@ class HighlightsGallery {
     if (image) {
       image.style.cursor = this.zoomLevel > 1 ? 'grab' : 'default';
     }
+
+    if (method) {
+      trackEvent({ name: 'viz_zoomed', params: { method: method, zoom_level: Math.round(this.zoomLevel * 100) } });
+    }
   }
 
-  zoomAt(centerX, centerY, zoomDelta) {
+  /**
+   * @param {number} centerX
+   * @param {number} centerY
+   * @param {number} zoomDelta
+   * @param {'scroll' | 'button'} [method='scroll']
+   */
+  zoomAt(centerX, centerY, zoomDelta, method = 'scroll') {
     const oldZoom = this.zoomLevel;
     const newZoom = Math.min(this.maxZoom, Math.max(this.minZoom, oldZoom + zoomDelta));
 
@@ -746,6 +823,8 @@ class HighlightsGallery {
       if (image) {
         image.style.cursor = this.zoomLevel > 1 ? 'grab' : 'default';
       }
+
+      trackEvent({ name: 'viz_zoomed', params: { method: method, zoom_level: Math.round(newZoom * 100) } });
     }
   }
 
