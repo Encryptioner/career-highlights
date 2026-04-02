@@ -156,6 +156,12 @@
                     <a href="https://www.linkedin.com/in/mir-mursalin-ankur">LinkedIn</a>
                     <a href="https://github.com/Encryptioner">GitHub</a>
                     <a href="https://nerddevs.com/author/ankur/">Nerddevs</a>
+                    <a href="https://www.supportkori.com/mirmursalinankur" class="qr-support-link" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee">
+                        <div class="qr-support-card">
+                            <img src="./assets/support/mirmursalinankur-qrcode.png" alt="Scan to support" class="qr-support-img" />
+                            <span class="qr-support-text">☕ Buy me a coffee</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -420,7 +426,7 @@
         .footer {
             background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
             color: #F9FAFB;
-            padding: 4rem 0 1.5rem;
+            padding: 2.5rem 0 1.5rem;
             margin-top: 5rem;
             position: relative;
         }
@@ -446,13 +452,13 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
+            gap: 2rem;
             padding: 0 1.5rem;
         }
 
         .footer-section h3 {
             color: #3B82F6;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-size: 1.125rem;
             font-weight: 700;
         }
@@ -502,8 +508,8 @@
 
         .footer-bottom {
             text-align: center;
-            padding: 2rem 1.5rem 0;
-            margin-top: 3rem;
+            padding: 0.75rem 1.5rem 0;
+            margin-top: 1rem;
             border-top: 1px solid #374151;
             color: #9CA3AF;
             font-size: 0.875rem;
@@ -561,6 +567,41 @@
                 margin-top: 2rem;
                 font-size: 0.8rem;
             }
+        }
+
+        /* QR Support Card */
+        .qr-support-link { text-decoration: none; display: inline-flex; }
+        .qr-support-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.75;
+            transition: opacity 0.2s;
+        }
+        .qr-support-link:hover .qr-support-card { opacity: 1; }
+        .qr-support-img {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 4px;
+            padding: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: block;
+            user-select: none;
+            pointer-events: none;
+        }
+        .qr-support-text {
+            font-size: 11px;
+            color: #F59E0B;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            user-select: none;
+            pointer-events: none;
+        }
+        @media (max-width: 480px) {
+            .qr-support-img { width: 36px; height: 36px; }
         }
     </style>
 </body>
